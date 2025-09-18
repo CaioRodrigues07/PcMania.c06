@@ -8,6 +8,9 @@ import servico.ProcessarPedido;
 
 public class Main {
     public static void main(String[] args) {
+
+        LimpaTela.exec();
+
         Scanner leitor = new Scanner(System.in);
 
         System.out.println("===================================");
@@ -19,9 +22,10 @@ public class Main {
         String C1cpf = leitor.nextLine();
         Cliente cliente1 = new Cliente(C1nome, C1cpf);
 
+
         LimpaTela.exec();
 
-        System.out.println("Ola " + C1nome + ", aqui temos as nossas promoção: ");
+        System.out.println("Ola " + C1nome + ", aqui temos as nossas promoçoes: ");
 
         System.out.println("    ========== Promoção 01 ==========");
         Computador PC1 = Computador.criaPromocao1();
