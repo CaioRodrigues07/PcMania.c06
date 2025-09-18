@@ -17,7 +17,7 @@ public class Cliente {
     public void addComputadores(Computador computador) {
         if (this.qtdComputadores < this.computadores.length) {
             this.computadores[this.qtdComputadores] = computador;
-            ++this.qtdComputadores;
+            this.qtdComputadores++ ;
         } else {
             System.out.println("Computadores esgotados");
         }
@@ -25,15 +25,18 @@ public class Cliente {
     }
 
     public float calculaTotalCompra() {
-        float total = 0.0F;
+        float total = 0;
 
-        for(int i = 0; i < this.qtdComputadores; ++i) {
+        for(int i = 0; i < this.qtdComputadores; i++) {
             total += this.computadores[i].getPreco();
         }
 
         return total;
     }
 
+
+
+    //getters essenciais para finalizacao no metodo helper de ProcessarPedido
     public String getNome() {
         return this.nome;
     }

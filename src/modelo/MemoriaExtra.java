@@ -1,6 +1,6 @@
 package modelo;
 
-public class MemoriaExtra {
+public class MemoriaExtra {//memorias extras que acompanham cada pedido, seja memUSB ou HD externo
     private String nome;
     private int gigas;
 
