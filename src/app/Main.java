@@ -43,9 +43,5 @@ public class Main {
 
         float total = cliente1.calculaTotalCompra();
         ProcessarPedido.helper(cliente1.getComputadores(), total, cliente1.getCpf(), cliente1.getNome());
-
-
-
-
     }
 }
